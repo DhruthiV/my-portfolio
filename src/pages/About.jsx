@@ -1,4 +1,6 @@
 import { Check } from "lucide-react";
+import portfolioPhoto from '../assets/portfolio-photo-dhruthi.png'; // adjust the relative path
+
 export default function About() {
   return (
     <section className="w-full py-9 md:py-14 lg:py-9 bg-background">
@@ -22,7 +24,7 @@ export default function About() {
         <div className="relative w-90 h-120 overflow-hidden rounded-xl bg-muted hover:scale-105 hover:shadow-lg transition-transform duration-300">
             {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-background/50"></div> */}
             <img
-              src="src/assets/portfolio-photo-dhruthi.png"
+              src={portfolioPhoto}
               alt="profile photo of Dhruthi"
               className="object-cover w-full h-full"
             />
