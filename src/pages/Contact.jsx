@@ -17,7 +17,7 @@ export default function Contact() {
           asChild
           size="lg"
           variant="secondary"
-          className="group mt-8 font-medium"
+          className="group mt-8 font-medium transition transform duration-300 hover:scale-105"
         >
           <a href="mailto:dhruthivenkateshheerguppe@gmail.com"
           >

@@ -78,8 +78,9 @@ export default function Skills() {
                 key={index}
                 className="bg-muted/30 hover:bg-muted/50 flex flex-col items-center rounded-lg p-4 text-center transition-colors"
               >
-                <div className="bg-primary/10 mb-3 flex h-12 w-12 items-center justify-center rounded-full">
-                  <IconComponent className="text-primary h-6 w-6" />
+                <div className="bg-primary/10 mb-3 flex h-16 w-16 items-center justify-center rounded-full hover:shadow-xs hover:scale-105 hover:rotate-3 transition-transform duration-500 ease-out
+                [--tw-shadow-color:theme(colors.secondary.DEFAULT)] ">
+                  <IconComponent className="text-primary h-9 w-9" />
                 </div>
                 <h3 className="mb-1 text-sm font-semibold">{badge.label}</h3>
                 <p className="text-muted-foreground text-xs">

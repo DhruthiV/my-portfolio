@@ -36,7 +36,7 @@ export default function Resume() {
             </div>
 
             {/* Resource type badge */}
-            <Badge className="absolute top-4 left-4">Resume</Badge>
+            <Badge className="absolute top-4 left-4 animate-pulse">Resume</Badge>
           </div>
 
           {/* Content column */}
@@ -51,7 +51,7 @@ export default function Resume() {
               </p>
 
 
-              <Button asChild size="lg" className="mt-8 w-full sm:w-auto">
+              <Button asChild size="lg" className="mt-8 w-full sm:w-auto transition transform duration-300 hover:scale-105 hover:shadow-lg">
                 <a
                   href="mailto:dhruthivenkateshheerguppe@gmail.com?subject=Requesting%20Your%20Latest%20Resume&body=Hi%20Dhruthi,%0D%0A%0D%0AI%20would%20like%20to%20request%20your%20latest%20resume.%20Please%20send%20it%20to%20me.%0D%0A%0D%0AThank%20you!%0D%0A[Your%20Name]"
                   className="no-underline hover:shadow-md"
@@ -67,7 +67,7 @@ export default function Resume() {
                   Copy Email
                 </Button>
                 {copied && (
-                  <span className="text-sm text-green-600 transition-opacity duration-300">
+                  <span className="text-sm text-green-800  transition-opacity duration-300">
                     Copied!
                   </span>
                 )}

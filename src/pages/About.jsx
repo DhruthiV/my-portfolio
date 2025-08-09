@@ -1,26 +1,25 @@
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-
 export default function About() {
   return (
     <section className="w-full py-9 md:py-14 lg:py-9 bg-background">
+
       <div className="container mx-auto px-4 md:px-6 2xl:max-w-[1400px]">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center ">
           <div className="space-y-2">
-            <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">
-              Welcome
+            <div className="inline-block rounded-full bg-secondary/10 px-3 py-1 text-sm text-primary animate-pulse">
+              Welcome 
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="p-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl  hover:shadow-lg rounded-full">
               Hi, I am Dhruthi V H!
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed  transition-colors duration-300 hover:text-primary">
               I am an entry-level developer exploring both front-end and back-end technologies.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-10">
 
-        <div className="relative w-90 h-120 overflow-hidden rounded-xl bg-muted">
+        <div className="relative w-90 h-120 overflow-hidden rounded-xl bg-muted hover:scale-105 hover:shadow-lg transition-transform duration-300">
             {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-background/50"></div> */}
             <img
               src="src/assets/portfolio-photo-dhruthi.png"
@@ -34,8 +33,8 @@ export default function About() {
               <li>
                 <div className="grid gap-1">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">
-                      <Check className="h-3.5 w-3.5 text-primary" />
+                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/10">
+                      <Check className="h-3.5 w-3.5 text-secondary animate-pulse" />
                     </div>
                     <h3 className="text-xl font-bold">Project Approach</h3>
                   </div>
@@ -47,8 +46,9 @@ export default function About() {
               <li>
                 <div className="grid gap-1">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">
-                      <Check className="h-3.5 w-3.5 text-primary" />
+                    <div className="flex h-6 w-6 items-center justify-center rounded-full 
+                    bg-secondary/10">
+                      <Check className="h-3.5 w-3.5 text-secondary animate-pulse" />
                     </div>
                     <h3 className="text-xl font-bold">The Design Perpective</h3>
                   </div>
@@ -60,8 +60,8 @@ export default function About() {
               <li>
                 <div className="grid gap-1">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">
-                      <Check className="h-3.5 w-3.5 text-primary" />
+                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/10">
+                      <Check className="h-3.5 w-3.5 text-secondary animate-pulse" />
                     </div>
                     <h3 className="text-xl font-bold">Work Values</h3>
                   </div>

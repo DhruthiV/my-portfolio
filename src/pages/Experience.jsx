@@ -100,14 +100,14 @@ export const experiences = [
 export default function Experience() {
   return (
     <section className="max-w-4xl mx-auto px-4 py-9">
-      <Accordion type="single" collapsible className="w-full space-y-4">
+      <Accordion type="single" collapsible className="w-full space-y-4 duration:1800">
         {experiences.map((exp, index) => (
           <AccordionItem
             key={index}
             value={`item-${index}`}
-            className="border rounded-lg shadow-sm bg-muted/10"
+            className="border rounded-lg shadow-sm bg-muted/10 "
           >
-            <AccordionTrigger className="p-6 text-left hover:no-underline hover:shadow-md hover:bg-muted/40 transition-all rounded-md  flex items-center justify-between w-full">
+            <AccordionTrigger className="p-6 text-left hover:no-underline hover:shadow-md hover:bg-muted/40 transition-all rounded-md  flex items-center justify-between w-full ">
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold">{exp.role}</h3>
                 <span className="text-sm text-muted-foreground">{exp.company}</span>
@@ -136,7 +136,7 @@ export default function Experience() {
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-2">
+              <div className="flex flex-wrap gap-2 pt-2 ">
                 {exp.skills.map((skill) => (
                   <Badge key={skill} variant="default">
                     {skill}

@@ -34,7 +34,7 @@ export default function Education() {
             {workExperiences.map((experience, index) => (
               <Card
                 key={index}
-                className="group hover:border-primary hover:bg-muted/50 overflow-hidden border p-0 transition-all"
+                className="group hover:border-tertiary hover:bg-muted/50 overflow-hidden border p-0 transition-all"
         >
         <CardContent className="p-0">
             <div className="block p-5">
@@ -48,7 +48,7 @@ export default function Education() {
                  </div>
             </div>
 
-              <div className="text-muted-foreground font-mono text-sm">
+              <div className="text-muted-foreground text-sm">
                   {experience.year}
                 </div>
               </div>

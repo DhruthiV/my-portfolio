@@ -48,9 +48,9 @@ export default function Values() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
         {features.map((feature) => (
-          <Card key={feature.title} className="p-0">
+          <Card key={feature.title} className="p-0  group transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
             <CardContent className="space-y-2 p-6">
-              <feature.icon className="text-primary h-12 w-12" />
+              <feature.icon className="text-primary h-12 w-12 transition-colors duration-300 group-hover:text-secondary" />
               <h3 className="font-bold">{feature.title}</h3>
               <p className="text-muted-foreground text-sm">
                 {feature.description}
