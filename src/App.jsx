@@ -12,7 +12,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <div className="absolute top-4 right-4">
     <ModeToggle />
   </div>
