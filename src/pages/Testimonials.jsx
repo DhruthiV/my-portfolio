@@ -10,14 +10,14 @@ export default function Testimonials() {
       designation: "Project Collaborator",
     },
     {
-      name: "John Doe",
-      testimonial: "Fantastic to work with!",
-      designation: "Project Manager",
+      name: "Dilip Kumar Maripuri",
+      testimonial: "As her teacher and guide, I have witnessed her unwavering dedication. She is hardworking, aware of her limitations, and consistently strives to achieve the best possible results.",
+      designation: "Associate Professor, Dept of CA, PES University",
     },
     {
-      name: "Jane Smith",
-      testimonial: "Very talented and proactive.",
-      designation: "UI/UX Designer",
+      name: "Hanni Vinay",
+      testimonial: "An incredible mentor and motivator, she is a true booster for her peers. Her depth of clarity not only drives her own excellence but also inspires and uplifts everyone around her, lucky to have a senior like her in my circle.",
+      designation: "Junior Student, Class of 2026, MCA PES University",
     },
   ]
 
