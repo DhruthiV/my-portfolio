@@ -7,41 +7,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import ProjectDetailPanel from "./ProjectDetailPanel";
-
-// Sample project data
-const projects = [
-  {
-    id: 1,
-    title: "PESU DCC Bot",
-    category: "Web Development",
-    description:
-      "Automated Curriculum Review, Revision and Approval System.",
-    image:
-      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["React", "React Bootstrap", "Fast API", "MongoDB", "Python", "Sentence Transformers", "ReportLab"],
-  },
-  {
-    id: 2,
-    title: "Siri Flavors, Online Millets Store",
-    category: "Web Development",
-    description:
-      "A Full Stack E-Commerce Website to promote Millet Based Food Products",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  },
-  {
-    id: 3,
-    title: "Mobile Fitness App",
-    category: "Web Development",
-    description:
-      "lorem this is an app that works as an app",
-    image:
-      "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["React Native", "Firebase", "Redux"],
-  },
-];
+import ProjectDetailModal from "./ProjectDetailModal";
+import {projects} from "./projects.js"
 
 export default function Projects() {
    const [selectedProject, setSelectedProject] = useState(null);
@@ -58,6 +25,11 @@ export default function Projects() {
             expertise in front-end, back-end, and mobile application
             development.
           </p>
+        </div>
+
+        <div className="flex justify-start content-center m-2 p-3 gap-3">
+          <Button>Mini Projects</Button>
+          <span className="text-sm text-tertiary self-center">Ongoing or Mini projects I am currently working on is here!</span>
         </div>
 
         {/* Project grid */}
@@ -94,12 +66,12 @@ export default function Projects() {
 
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
+                  {project.tech.map((t) => (
                     <span
-                      key={tag}
+                      key={t}
                       className="bg-muted text-muted-foreground inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium"
                     >
-                      {tag}
+                      {t}
                     </span>
                   ))}
                 </div>
@@ -114,10 +86,14 @@ export default function Projects() {
             </Card>
           ))}
         </div>
-<ProjectDetailPanel
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
+
+        {/* Open project view when selected */}
+        {selectedProject && (
+          <ProjectDetailModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
       </div>
       
     </div>
