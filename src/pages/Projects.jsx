@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import ProjectDetailModal from "./ProjectDetailModal";
-import {projects} from "./projects.js"
+import { project_details } from "./project_details";
 
 export default function Projects() {
    const [selectedProject, setSelectedProject] = useState(null);
@@ -34,7 +34,7 @@ export default function Projects() {
 
         {/* Project grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
+          {project_details.map((project) => (
             <Card
               key={project.id}
               className="group hover:border-primary/30 overflow-hidden pt-0 transition-all duration-300 hover:shadow-lg"
