@@ -9,11 +9,12 @@ export default function About() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center ">
           <div className="space-y-2">
             <div className="inline-block rounded-full bg-secondary/10 px-3 py-1 text-sm text-primary animate-pulse">
-              Welcome 
+              Welcome
             </div>
-            <h2 className="p-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl  hover:shadow-lg rounded-full">
+            <h2 className="p-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl hover:scale-105 duration-300 transform rounded-full transition-transform">
               Hi, I am Dhruthi V H!
             </h2>
+
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed  transition-colors duration-300 hover:text-primary">
               I am an entry-level developer exploring both front-end and back-end technologies.
             </p>
@@ -21,7 +22,7 @@ export default function About() {
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-10">
 
-        <div className="relative w-90 h-120 overflow-hidden rounded-xl bg-muted hover:scale-105 hover:shadow-lg transition-transform duration-300">
+          <div className="relative w-90 h-120 overflow-hidden rounded-xl bg-muted hover:scale-105 hover:shadow-lg transition-transform duration-300">
             {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-background/50"></div> */}
             <img
               src={portfolioPhoto}
@@ -74,7 +75,7 @@ export default function About() {
               </li>
             </ul>
           </div>
-          
+
         </div>
       </div>
     </section>
