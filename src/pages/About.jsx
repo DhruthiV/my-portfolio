@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import portfolioPhoto from '../assets/portfolio-photo-dhruthi.png'; // adjust the relative path
+import portfolioPhoto from '../assets/portfolio-photo-dhruthi.png';
 
 export default function About() {
   return (
