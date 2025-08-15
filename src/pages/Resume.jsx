@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, ClipboardCopy } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
+import resumePic from "../assets/resumePic.jpg"
 
 export default function Resume() {
 
@@ -21,13 +22,13 @@ export default function Resume() {
       <div className="bg-card overflow-hidden rounded-xl border shadow-sm">
         <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2">
           {/* img column */}
-          <div className="relative h-full min-h-[300px] md:min-h-0">
+          <div className="relative h-full min-h-[300px] md:h-full">
             <div className="absolute inset-0 w-full overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3"
+                src={resumePic}
                 alt="Resume preview"
                 fill="true"
-                className="object-cover object-center"
+                className="object-cover object-top w-full h-full"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
 
