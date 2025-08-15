@@ -32,10 +32,9 @@ export default function Testimonials() {
   }
 
   return (
-    // <div className="container mx-auto px-4 py-24 md:px-6 lg:py-32 2xl:max-w-[1400px]">
-    <div className="container pt-10 pb-3 mx-auto px-4 md:px-6 2xl:max-w-[1400px]">
+    <div className="container pt-10 pb-3 mx-auto 2xl:max-w-[1400px]">
 
-      <div className="relative pt-10 pb-1 max-w-4xl mx-auto overflow-hidden px-6 sm:px-0">
+      <div className="relative pt-10 pb-1 max-w-4xl mx-auto overflow-hidden">
         {/* Slides Container */}
         <div
           className="flex transition-transform duration-700 ease-in-out"
@@ -46,14 +45,14 @@ export default function Testimonials() {
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="min-w-full flex-shrink-0 px-4 sm:px-6 "
+              className="w-full flex-shrink-0"
             >
               <blockquote className="text-center w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
 
                 <div className="text-primary mb-6 font-serif text-4xl">
                   &ldquo;
                 </div>
-                <p className="text-base sm:text-sm md:text-xl leading-relaxed max-w-3xl mx-auto break-words">
+                <p className="text-base p-3 sm:text-sm md:text-lg leading-relaxed max-w-3xl mx-auto break-words">
                   {item.testimonial}
                 </p>
                 <div className="mt-6 flex flex-col items-center md:mt-8">
