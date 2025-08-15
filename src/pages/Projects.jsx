@@ -11,7 +11,7 @@ import ProjectDetailModal from "./ProjectDetailModal";
 import { project_details } from "./project_details";
 
 export default function Projects() {
-   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
   return (
     <div className="bg-background py-16 md:py-24">
       <div className="container mx-auto px-4 2xl:max-w-[1400px]">
@@ -28,7 +28,16 @@ export default function Projects() {
         </div>
 
         <div className="flex justify-start content-center m-2 p-3 gap-3">
-          <Button>Mini Projects</Button>
+          <Button asChild>
+            <a
+              href="https://www.notion.so/2508debe72c980a39969f972dfe7706a?v=2508debe72c980a89df1000c2570ddf0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              More Projects
+            </a>
+          </Button>
+
           <span className="text-sm text-tertiary self-center">Ongoing or Mini projects I am currently working on is here!</span>
         </div>
 
@@ -78,9 +87,9 @@ export default function Projects() {
               </CardContent>
 
               <CardFooter>
-                <Button variant="secondary"  onClick={() => setSelectedProject(project)}>
+                <Button variant="secondary" onClick={() => setSelectedProject(project)}>
                   View project
-                   <ExternalLink className="ml-1 h-4 w-4" /> 
+                  <ExternalLink className="ml-1 h-4 w-4" />
                 </Button>
               </CardFooter>
             </Card>
@@ -95,7 +104,7 @@ export default function Projects() {
           />
         )}
       </div>
-      
+
     </div>
   );
 }
