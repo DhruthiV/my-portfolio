@@ -30,7 +30,7 @@ export default function Projects() {
         <div className="flex justify-start content-center m-2 p-3 gap-3">
           <Button asChild>
             <a
-              href="https://www.notion.so/2508debe72c980a39969f972dfe7706a?v=2508debe72c980a89df1000c2570ddf0"
+              href="https://dhruthivh.notion.site/2508debe72c980a39969f972dfe7706a?v=2508debe72c980598217000ca01cff22"
               target="_blank"
               rel="noopener noreferrer"
             >
